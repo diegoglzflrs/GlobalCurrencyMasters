@@ -53,22 +53,28 @@ def convertirMonedas():
         archivo.write(texto_json)
     print("\n")
 
+def salir():
+    print("Adios!")
+    return False
+
 def main():
+    opciones ={
+        1: consultarMonedas,
+        2: convertirMonedas,
+        3: salir
+    }
     menu()
     banderaMenu = True
     while banderaMenu:
-        op = int(input("Elige el número de la opción que desea realizar: "))
-        if op == 1:
-            consultarMonedas()
-            continue
-        elif op == 2:
-            convertirMonedas()
-            continue
-        elif op == 3:
-            print("Adios!")
-            banderaMenu = False
-            break
-        else:
-            print("Error: Opción inválida.")
-
+        try:
+            op = int(input("Elige el número de la opción que desea realizar: "))
+            elegida = opciones.get(op)
+            if elegida:
+                resultado = elegida()
+                if resultado is False:
+                    banderaMenu = False
+            else:
+                print("Error: Opción inválida.")
+        except ValueError:
+            print("Error: Debes ingresar un número.")
 main()
