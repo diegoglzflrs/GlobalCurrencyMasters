@@ -18,6 +18,9 @@ def consultarMonedas():
     respuesta = requests.get(url)
     if respuesta.status_code == 200:
         datos = respuesta.json()
+        texto_json = json.dumps(datos, indent=2)
+        with open("consulta.txt", "w") as archivo:
+            archivo.write(texto_json)
         for codigo, nombre in datos.items(): 
             if buscar in codigo or buscar in nombre:
                 print("Si existe")
@@ -45,6 +48,9 @@ def convertirMonedas():
             print(f'Error: Codigo de estado: {respuesta.status_code}')
     except ValueError as e:
         print("Error: ", e)
+    texto_json = json.dumps(datos, indent=2)
+    with open("conversion.txt", "w") as archivo:
+        archivo.write(texto_json)
     print("\n")
 
 def main():
