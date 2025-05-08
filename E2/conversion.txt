@@ -1,0 +1,8 @@
+{
+  "date": "2025-05-02 17:00:00+00",
+  "from": "MXN",
+  "to": "USD",
+  "rate": "0.050922",
+  "givenAmount": "900.0",
+  "convertedAmount": "45.830"
+}
