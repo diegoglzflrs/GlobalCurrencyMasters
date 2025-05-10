@@ -1,0 +1,45 @@
+
+{
+  "date": "2025-05-08 18:00:00+00",
+  "from": "MXN",
+  "to": "USD",
+  "rate": "0.051105",
+  "givenAmount": "450.0",
+  "convertedAmount": "22.997"
+}
+
+{
+  "date": "2025-05-08 18:00:00+00",
+  "from": "USD",
+  "to": "MXN",
+  "rate": "19.567",
+  "givenAmount": "15.0",
+  "convertedAmount": "293.512"
+}
+
+{
+  "date": "2025-05-09 23:00:00+00",
+  "from": "PKR",
+  "to": "CHILLGUY",
+  "rate": "0.046095",
+  "givenAmount": "340.0",
+  "convertedAmount": "15.672"
+}
+
+{
+  "date": "2025-05-09 23:00:00+00",
+  "from": "CHILLGUY",
+  "to": "MXN",
+  "rate": "1.4955",
+  "givenAmount": "600.0",
+  "convertedAmount": "897.282"
+}
+
+{
+  "date": "2025-05-09 23:00:00+00",
+  "from": "MXN",
+  "to": "RUB",
+  "rate": "4.2433",
+  "givenAmount": "500.0",
+  "convertedAmount": "2121.630"
+}
