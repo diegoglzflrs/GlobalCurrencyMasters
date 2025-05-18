@@ -1,6 +1,4 @@
 import os
-import sys
-import subprocess
 import requests
 import json
 import matplotlib.pyplot as plt
@@ -8,11 +6,6 @@ from datetime import datetime
 from openpyxl import Workbook, load_workbook
 
 apikey = '7a86521fff0242e4b35bf70ee3696f80'
-
-def open_in_idle(file):
-    idle_path = os.path.join(sys.base_prefix, 'Lib', 'idlelib', 'idle.pyw')
-    command = [sys.executable, idle_path, file]
-    subprocess.Popen(command)
 
 def menu():
     print("""###Global###Currency###Masters###
